@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OJT Progress Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="background-animation">
+      <div class="gradient-sphere sphere-1"></div>
+      <div class="gradient-sphere sphere-2"></div>
+      <div class="gradient-sphere sphere-3"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <div class="badge">15 Months Program</div>
+        <h1 class="title">OJT Progress</h1>
+      </div>
+
+      <div class="timeline-info" id="ojtDates">
+        <div class="timeline-item">
+          <div class="timeline-dot start"></div>
+          <div class="timeline-content">
+            <span class="timeline-label">Started</span>
+            <span class="timeline-date" id="startDate">March 19, 2025</span>
+          </div>
+        </div>
+        
+        <div class="timeline-line" id="timelineLine"></div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot end" id="endDot"></div>
+          <div class="timeline-content">
+            <span class="timeline-label" id="endLabel">Ends</span>
+            <span class="timeline-date" id="endDate">June 30, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-wrapper">
+        <div class="progress-header">
+          <span class="progress-label">Completion</span>
+          <span class="progress-percentage" id="progressPercent">0%</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-track">
+            <div class="progress-bar" id="progressBar">
+              <div class="progress-glow"></div>
+            </div>
+          </div>
+          <div class="progress-markers">
+            <div class="marker" style="left: 0%"></div>
+            <div class="marker" style="left: 25%"></div>
+            <div class="marker" style="left: 50%"></div>
+            <div class="marker" style="left: 75%"></div>
+            <div class="marker" style="left: 100%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-value" id="remainingTime">--</div>
+          <div class="stat-label">Time Remaining</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">📅</div>
+          <div class="stat-value" id="daysElapsed">--</div>
+          <div class="stat-label">Days Elapsed</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-value" id="totalDays">--</div>
+          <div class="stat-label">Total Days</div>
+        </div>
+      </div>
+
+      <div class="datetime-section">
+        <div class="date-display" id="todayDate">--</div>
+        <div class="time-display" id="currentTime">--</div>
+      </div>
+
+      <div class="status-badge" id="statusBadge">
+        <span class="status-dot"></span>
+        <span class="status-text">In Progress</span>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
